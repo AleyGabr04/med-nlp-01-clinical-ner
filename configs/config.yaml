@@ -1,0 +1,14 @@
+data:
+  dataset_name: tner/bc5cdr
+  dataset_config: null
+  # Commit SHA of the auto-converted refs/convert/parquet branch (no loading script).
+  revision: 564118257f090b2592b7b1607ec60f40948acf1c
+  tokens_column: tokens
+  tags_column: tags
+  label_names: [O, B-Chemical, B-Disease, I-Disease, I-Chemical]
+
+model:
+  checkpoint: microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext
+
+train:
+  seed: 42
